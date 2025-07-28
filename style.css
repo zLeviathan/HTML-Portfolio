@@ -2,6 +2,8 @@ body {background: #2c2c2c;}
 body p {color: #c4c4c4;}
 h1, h2, h3 {font-family: 'Montserrat', sans-serif;font-weight: 700;}
 p, a, li {font-family: 'Lato', sans-serif;font-weight: 400;}
+a {text-decoration: none;}
+svg {margin: 0 5px;}
 .micro_containers {background: #3b3b3b;color: #e4e4e4;padding: 2px 8px;border-radius: 5px;}
 .info_container h3, h2 {color: #e4e4e4;}
 .info_container h1 {color: #a8dadc;}
@@ -11,7 +13,8 @@ p, a, li {font-family: 'Lato', sans-serif;font-weight: 400;}
 .developer_photo {width: 150px;height: 150px;border-radius: 50%;object-fit: cover;overflow: hidden;display: inline-table;}
 .developer_photo img {width: 100%; height:100%; object-fit: cover;}
 .developer_container {width: 450px;display:inline-block;text-align: center;background: #242424;padding: 20px 50px;border-radius: 10px;}
-.body_container {display: inline-block; text-align: justify;background: #242424;padding: 20px 50px;border-radius: 10px;}
+.body_container {width: auto;display: inline-block; text-align: justify;background: #242424;padding: 20px 50px;border-radius: 10px;}
 .info_container  {display:inline-block ;text-align: center;}
 .languages_container, .backend_container, .projectvantage_container {display:inline-block;}
+.languages_container {margin-right: 20px;}
 .featured_project h2 {margin-top: 33px;}
