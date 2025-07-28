@@ -1,0 +1,7 @@
+.main_container {max-width: 1180px;height: auto; margin: 200px auto;position: relative;text-align: center;}
+.developer_photo {width: 160px;height: 160px;border-radius: 50%;object-fit: cover;overflow: hidden;display: inline-table;}
+.developer_photo img {width: 100%; height:100%; object-fit: cover;}
+.body_container {display: inline-block; text-align: justify;margin: 0 50px;}
+.info_container, .developer_container {width:450px;display:inline-block ;text-align: center;}
+.developer_container {margin: 0 50px;}
+.languages_container, .backend_container, .projectvantage_container {width: 250px;display:inline-block;}
