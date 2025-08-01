@@ -1,29 +1,49 @@
 :root {
   --background: #3b3b3b;
+  --about-background: #5a463f;
   --foreground: #e6e6e6;
   --accent-1: #f8d961;
   --accent-2: #b2cd9c;
   --header-button-background: #4d4844;
-  --button-background: #ca7842;
+  --button-background: #81951d;
   --header-background: #353230
 }
+
+html {scroll-behavior: smooth;}
 * {margin: 0; padding: 0; box-sizing: border-box;font-family: 'Inter', sans-serif;}
+
 .main-container {width: auto;height: auto;}
-.header {background: var(--header-background);padding: 20px 40px;font-weight: bold;font-size: 24px;}
+.header {background: var(--header-background);padding: 20px 40px;font-weight: bold;font-size: 24px;width: 100%;height: 120px; position: fixed;}
 .header-content {display:flex;align-items: center;justify-content: space-between;margin: 0 30px;color: var(--accent-1);}
 .header-logo-container {display: flex;flex-grow: 0;gap: 30px;align-items: center;}
 .dev-name {background: var(--header-button-background);padding: 8px 20px;border-radius: 20px;}
 .header-navigation {display:flex;flex-grow: 0;gap: 50px;}
 .header-links {display:flex;flex-grow: 0;gap: 70px;list-style-type: none;}
 .header-link {padding: 8px 30px;border-radius: 20px;text-decoration: none;color: var(--accent-1);background: var(--header-button-background);}
-.home-container {width: 100%; height: 87%;display:flex;align-items: center;flex-flow: column wrap;gap: 80px;justify-content: center;}
-.home-content {display: flex;width:100%; justify-content: center;gap: 80px;}
+
+.home-container {width: 100%; height: 100%;display:grid;gap: 50px;align-content: center;}
+.home-content {display: flex; justify-content: center;gap: 50px;}
 .info {background: var(--header-background);color: var(--foreground);display:flex;flex-direction: column;gap:30px;justify-content: center;width: 40%;padding: 50px;border-radius: 20px;}
 .greeter {font-size:64px;font-weight: bold;}
 .occupations {font-size: 24px;display: flex;gap: 20px;}
-.occupations span {background: var(--background);color: var(--accent-2);padding: 5px 10px;}
+.occupations span {background: var(--background);color: var(--accent-2);padding: 5px 10px;border-radius: 10px;}
 .bio {font-size: 24px;}
 .image {background: var(--header-background);padding: 10px;border-radius: 20px;}
 .nav-buttons {display:flex;width: 100%;justify-content: center;gap: 80px;}
-.nav-button {background: var(--button-background);color: var(--foreground);font-size: 32px;font-weight: bold;border-radius: 20px;text-decoration: none;padding: 15px 40px;}
+.nav-button {background: var(--button-background);color: var(--foreground);font-size: 32px;font-weight: bold;border-radius: 30px;text-decoration: none;padding: 15px 40px;}
 
+.about-container {color: var(--foreground);font-size: 24px;display:flex;justify-content: space-around;flex-direction: column;gap: 50px;}
+.bio-title, .education-header, .interest-header, .language-header {color: var(--accent-1);font-size: 24px;font-weight: bold;display: relative; text-align: center;}
+.section-title {font-size: 64px;font-weight: bold;color: var(--accent-2);justify-self: center;width: 100%;display: flex; justify-content: center;height: 20%;align-items: center;}
+.short-bio {background: var(--about-background); width: 30%;padding: 20px;text-align: center;border-radius: 20px;}
+.interest-list, .education-content, .language-content {background: var(--about-background);display:flex; flex-direction: column;gap: 15px;width: 400px;padding: 20px 30px;height: 220px;border-radius: 20px}
+.about-me, .education-container, .language, .other-interests {display: flex;flex-direction: column;gap: 30px;}
+.education-language {display: flex;justify-content: center;gap: 80px;}
+.short-bio-container {display: flex;flex-direction: column;gap: 20px;align-items: center;}
+.bio-highlight {color: var(--accent-2);}
+.college ul {padding-left: 20px;color: #b3b3b3;}
+.certificate ul {padding-left: 20px;color: #b3b3b3;}
+.interest-list ul {padding-left: 20px;display: flex;flex-direction: column;gap: 15px;}
+
+#home {padding-top: 120px;}
+#about, #projects {height: 100vh;width: 100%;padding-top: 120px;}
